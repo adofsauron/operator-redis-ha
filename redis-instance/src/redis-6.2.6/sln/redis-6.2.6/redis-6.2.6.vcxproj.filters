@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{0e5946d4-fa2d-4946-9e42-45fa7d4e69bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{b5599e00-e463-45a8-a565-113c2fa7f31d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps">
+      <UniqueIdentifier>{497525a6-d417-4a00-bc91-e7238e0b6586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\hiredis">
+      <UniqueIdentifier>{9a09e7c4-9f64-42ba-82d0-646a06753a20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\hiredis\adapters">
+      <UniqueIdentifier>{fda2a659-a665-4b2c-8f5f-83cdf162a571}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\acl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\adlist.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ae.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ae_epoll.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ae_evport.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ae_kqueue.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ae_select.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\anet.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\aof.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bitops.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\blocked.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\childinfo.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cli_common.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cluster.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\config.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\connection.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crc16.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crc64.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crcspeed.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\db.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\debug.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\defrag.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dict.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\endianconv.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\evict.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\expire.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\geo.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\geohash.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\geohash_helper.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gopher.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hyperloglog.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\intset.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\latency.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lazyfree.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\listpack.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\localtime.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lolwut.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lolwut5.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lolwut6.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lzf_c.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lzf_d.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\memtest.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\module.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\monotonic.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mt19937-64.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\multi.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\networking.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\notify.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\object.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pqsort.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pubsub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\quicklist.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rand.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rax.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rdb.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis-benchmark.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis-check-aof.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis-check-rdb.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\redis-cli.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\release.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\replication.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scripting.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sds.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sentinel.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\server.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\setcpuaffinity.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\setproctitle.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sha1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sha256.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\siphash.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\slowlog.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sort.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sparkline.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\syncio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\t_hash.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\t_list.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\t_set.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\t_stream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\t_string.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\t_zset.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\timeout.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tls.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracking.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ziplist.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zipmap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zmalloc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\helloacl.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\helloblock.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\hellocluster.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\hellodict.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\hellohook.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\hellotimer.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\hellotype.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\helloworld.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\deps\hiredis\alloc.c">
+      <Filter>deps\hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\deps\hiredis\async.c">
+      <Filter>deps\hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\deps\hiredis\dict.c">
+      <Filter>deps\hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\deps\hiredis\hiredis.c">
+      <Filter>deps\hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\deps\hiredis\net.c">
+      <Filter>deps\hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\deps\hiredis\read.c">
+      <Filter>deps\hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\deps\hiredis\sds.c">
+      <Filter>deps\hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\deps\hiredis\sockcompat.c">
+      <Filter>deps\hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\deps\hiredis\ssl.c">
+      <Filter>deps\hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\deps\hiredis\test.c">
+      <Filter>deps\hiredis</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\adlist.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ae.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\anet.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\asciilogo.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\atomicvar.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\bio.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\cli_common.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\cluster.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\connection.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\connhelpers.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crc16_slottable.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crc64.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crcspeed.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\debugmacro.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dict.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\endianconv.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fmacros.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\geo.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\geohash.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\geohash_helper.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\help.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\intset.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\latency.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\listpack.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\listpack_malloc.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lolwut.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lzf.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lzfP.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\monotonic.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mt19937-64.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pqsort.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\quicklist.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rand.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rax.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rax_malloc.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rdb.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redisassert.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\redismodule.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rio.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sds.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sdsalloc.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\server.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sha1.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sha256.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\slowlog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\solarisfixes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sparkline.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stream.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\testhelp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\version.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ziplist.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zipmap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zmalloc.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\alloc.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\async.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\async_private.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\dict.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\fmacros.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\hiredis.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\hiredis_ssl.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\net.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\read.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\sds.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\sdsalloc.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\sdscompat.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\sockcompat.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\win32.h">
+      <Filter>deps\hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\adapters\ae.h">
+      <Filter>deps\hiredis\adapters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\adapters\glib.h">
+      <Filter>deps\hiredis\adapters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\adapters\ivykis.h">
+      <Filter>deps\hiredis\adapters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\adapters\libev.h">
+      <Filter>deps\hiredis\adapters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\adapters\libevent.h">
+      <Filter>deps\hiredis\adapters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\adapters\libuv.h">
+      <Filter>deps\hiredis\adapters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\adapters\macosx.h">
+      <Filter>deps\hiredis\adapters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\hiredis\adapters\qt.h">
+      <Filter>deps\hiredis\adapters</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\Makefile">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\..\src\mkreleasehdr.sh">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\..\src\redis-trib.rb">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\..\src\valgrind.sup">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\..\deps\hiredis\appveyor.yml">
+      <Filter>deps\hiredis</Filter>
+    </None>
+    <None Include="..\..\deps\hiredis\CHANGELOG.md">
+      <Filter>deps\hiredis</Filter>
+    </None>
+    <None Include="..\..\deps\hiredis\COPYING">
+      <Filter>deps\hiredis</Filter>
+    </None>
+    <None Include="..\..\deps\hiredis\hiredis.pc.in">
+      <Filter>deps\hiredis</Filter>
+    </None>
+    <None Include="..\..\deps\hiredis\hiredis_ssl.pc.in">
+      <Filter>deps\hiredis</Filter>
+    </None>
+    <None Include="..\..\deps\hiredis\hiredis_ssl-config.cmake.in">
+      <Filter>deps\hiredis</Filter>
+    </None>
+    <None Include="..\..\deps\hiredis\hiredis-config.cmake.in">
+      <Filter>deps\hiredis</Filter>
+    </None>
+    <None Include="..\..\deps\hiredis\Makefile">
+      <Filter>deps\hiredis</Filter>
+    </None>
+    <None Include="..\..\deps\hiredis\README.md">
+      <Filter>deps\hiredis</Filter>
+    </None>
+    <None Include="..\..\deps\hiredis\test.sh">
+      <Filter>deps\hiredis</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\deps\hiredis\CMakeLists.txt">
+      <Filter>deps\hiredis</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

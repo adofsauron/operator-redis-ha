@@ -1,0 +1,11 @@
+FROM harbor.ceclouddyn.com/baseos/centos:8.4.2105-0.0.1
+
+ADD . /build
+
+RUN cd /build && \
+    bash ./build.sh && \
+    rm /build -rf && \
+    yum install librados2 librbd1 rbd-nbd -y
+
+ENTRYPOINT ["csiplugin"]
+

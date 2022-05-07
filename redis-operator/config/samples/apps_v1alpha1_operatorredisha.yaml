@@ -1,0 +1,17 @@
+apiVersion: apps.operator-redis-ha.org/v1alpha1
+kind: OperatorRedisHA
+metadata:
+  name: redis-ha-test
+spec:
+  kubernetesConfig:
+    namespace: default
+    image: harbor.ceclouddyn.com/paas/operator-redis-ha-instance:0.0.51
+    imagePullPolicy: IfNotPresent
+    resources:
+      requests:
+        cpu: 101m
+        memory: 128Mi
+      limits:
+        cpu: 101m
+        memory: 128Mi
+

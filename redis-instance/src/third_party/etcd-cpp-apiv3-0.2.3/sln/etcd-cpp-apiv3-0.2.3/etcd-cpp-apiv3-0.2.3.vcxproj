@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{e8ccedd5-4d41-4241-8364-3fa33fd2012d}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>etcd_cpp_apiv3_0_2_3</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Client.cpp" />
+    <ClCompile Include="..\..\src\KeepAlive.cpp" />
+    <ClCompile Include="..\..\src\Response.cpp" />
+    <ClCompile Include="..\..\src\SyncClient.cpp" />
+    <ClCompile Include="..\..\src\v3\Action.cpp" />
+    <ClCompile Include="..\..\src\v3\action_constants.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncCompareAndDeleteAction.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncCompareAndSwapAction.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncDeleteAction.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncDeleteResponse.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncElectionAction.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncElectionResponse.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncHeadAction.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncHeadResponse.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncLeaseAction.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncLeaseResponse.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncLockAction.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncLockResponse.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncPutAction.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncPutResponse.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncRangeAction.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncRangeResponse.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncSetAction.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncTxnAction.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncTxnResponse.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncUpdateAction.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncWatchAction.cpp" />
+    <ClCompile Include="..\..\src\v3\AsyncWatchResponse.cpp" />
+    <ClCompile Include="..\..\src\v3\KeyValue.cpp" />
+    <ClCompile Include="..\..\src\v3\Transaction.cpp" />
+    <ClCompile Include="..\..\src\v3\V3Response.cpp" />
+    <ClCompile Include="..\..\src\Value.cpp" />
+    <ClCompile Include="..\..\src\Watcher.cpp" />
+    <ClCompile Include="..\..\tst\AuthTest.cpp" />
+    <ClCompile Include="..\..\tst\ElectionTest.cpp" />
+    <ClCompile Include="..\..\tst\EtcdSyncTest.cpp" />
+    <ClCompile Include="..\..\tst\EtcdTest.cpp" />
+    <ClCompile Include="..\..\tst\LockTest.cpp" />
+    <ClCompile Include="..\..\tst\MemLeakTest.cpp" />
+    <ClCompile Include="..\..\tst\SecurityChannelTest.cpp" />
+    <ClCompile Include="..\..\tst\WatcherTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\etcd\Client.hpp" />
+    <ClInclude Include="..\..\etcd\KeepAlive.hpp" />
+    <ClInclude Include="..\..\etcd\Response.hpp" />
+    <ClInclude Include="..\..\etcd\SyncClient.hpp" />
+    <ClInclude Include="..\..\etcd\v3\Action.hpp" />
+    <ClInclude Include="..\..\etcd\v3\action_constants.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncCompareAndDeleteAction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncCompareAndSwapAction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncDeleteAction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncDeleteResponse.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncElectionAction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncElectionResponse.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncHeadAction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncHeadResponse.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncLeaseAction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncLeaseResponse.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncLockAction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncLockResponse.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncPutAction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncPutResponse.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncRangeAction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncRangeResponse.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncSetAction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncTxnAction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncTxnResponse.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncUpdateAction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncWatchAction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\AsyncWatchResponse.hpp" />
+    <ClInclude Include="..\..\etcd\v3\KeyValue.hpp" />
+    <ClInclude Include="..\..\etcd\v3\Transaction.hpp" />
+    <ClInclude Include="..\..\etcd\v3\V3Response.hpp" />
+    <ClInclude Include="..\..\etcd\Value.hpp" />
+    <ClInclude Include="..\..\etcd\Watcher.hpp" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

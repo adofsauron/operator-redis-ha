@@ -1,0 +1,24 @@
+# permissions for end users to edit operatorredishas.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: operatorredisha-editor-role
+rules:
+- apiGroups:
+  - apps.operator-redis-ha.org
+  resources:
+  - operatorredishas
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - apps.operator-redis-ha.org
+  resources:
+  - operatorredishas/status
+  verbs:
+  - get

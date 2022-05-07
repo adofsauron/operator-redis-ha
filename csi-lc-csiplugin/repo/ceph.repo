@@ -1,0 +1,22 @@
+[Ceph]
+name=Ceph packages for $basearch
+baseurl=https://mirrors.aliyun.com/ceph/rpm-octopus/el8/$basearch
+enabled=1
+gpgcheck=0
+type=rpm-md
+
+[Ceph-noarch]
+name=Ceph noarch packages
+baseurl=https://mirrors.aliyun.com/ceph/rpm-octopus/el8/noarch
+enabled=1
+gpgcheck=0
+type=rpm-md
+
+[ceph-source]
+name=Ceph source packages
+baseurl=https://mirrors.aliyun.com/ceph/rpm-octopus/el8/SRPMS
+enabled=1
+gpgcheck=0
+type=rpm-md
+
+

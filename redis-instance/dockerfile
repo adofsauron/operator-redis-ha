@@ -1,0 +1,46 @@
+# step 1
+FROM harbor.ceclouddyn.com/paas/operator-redis-ha-instance-base:0.0.23 as builder
+
+ADD ./src/redis-6.2.6                       /build/redis-6.2.6
+ADD ./src/predixy-1.0.5                     /build/predixy-1.0.5
+ADD ./src/nginx                             /build/nginx
+ADD ./src/build-redis-server-all.sh         /build/build-redis-server-all.sh
+ADD ./src/build-predixy-all.sh              /build/build-predixy-all.sh
+ADD ./src/entrypoint.sh                     /build/entrypoint.sh
+ADD ./src/redis-sh                          /usr/bin/redis-sh
+ADD ./src/nginx/nginx-etcd.conf             /usr/bin/nginx-etcd.conf
+
+
+RUN cd /build && \
+    dos2unix *.sh && \ 
+    bash build-redis-server-all.sh && \
+    bash build-predixy-all.sh && \
+    cd nginx && \
+    dos2unix *.sh && \ 
+    bash build.sh && \
+    cd /build && \
+    mkdir -p /usr/bin/conf-redis && \
+    mkdir -p /usr/bin/conf-predixy && \
+    cp redis-6.2.6/conf/* /usr/bin/conf-redis/ -rf && \
+    cp predixy-1.0.5/conf/* /usr/bin/conf-predixy/ -rf && \
+    cp entrypoint.sh /usr/bin/ && \
+    cp /usr/bin/redis-sh/*  /usr/bin/ && \
+    rm /usr/bin/redis-sh -rf && \
+    chmod +x /usr/bin/* && \
+    dos2unix /usr/bin/*.sh && \ 
+    yum remove make cmake dos2unix gcc -y && \
+    yum clean all && \
+    cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime -f 
+
+# step 2
+FROM harbor.ceclouddyn.com/baseos/centos:8.4.2105-0.0.1
+
+USER root
+
+COPY --from=builder /usr /usr
+
+RUN export ETCDCTL_API=3 && \
+    alias ll="ls -al" && \
+    cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+ENTRYPOINT [ "bash", "/usr/bin/entrypoint.sh" ]

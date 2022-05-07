@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4d3938d7-e1b6-4f7b-a3e2-39b64e51cf7c}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>redis_6_2_6</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="..\..\deps\hiredis\alloc.c" />
+    <ClCompile Include="..\..\deps\hiredis\async.c" />
+    <ClCompile Include="..\..\deps\hiredis\dict.c" />
+    <ClCompile Include="..\..\deps\hiredis\hiredis.c" />
+    <ClCompile Include="..\..\deps\hiredis\net.c" />
+    <ClCompile Include="..\..\deps\hiredis\read.c" />
+    <ClCompile Include="..\..\deps\hiredis\sds.c" />
+    <ClCompile Include="..\..\deps\hiredis\sockcompat.c" />
+    <ClCompile Include="..\..\deps\hiredis\ssl.c" />
+    <ClCompile Include="..\..\deps\hiredis\test.c" />
+    <ClCompile Include="..\..\src\acl.c" />
+    <ClCompile Include="..\..\src\adlist.c" />
+    <ClCompile Include="..\..\src\ae.c" />
+    <ClCompile Include="..\..\src\ae_epoll.c" />
+    <ClCompile Include="..\..\src\ae_evport.c" />
+    <ClCompile Include="..\..\src\ae_kqueue.c" />
+    <ClCompile Include="..\..\src\ae_select.c" />
+    <ClCompile Include="..\..\src\anet.c" />
+    <ClCompile Include="..\..\src\aof.c" />
+    <ClCompile Include="..\..\src\bio.c" />
+    <ClCompile Include="..\..\src\bitops.c" />
+    <ClCompile Include="..\..\src\blocked.c" />
+    <ClCompile Include="..\..\src\childinfo.c" />
+    <ClCompile Include="..\..\src\cli_common.c" />
+    <ClCompile Include="..\..\src\cluster.c" />
+    <ClCompile Include="..\..\src\config.c" />
+    <ClCompile Include="..\..\src\connection.c" />
+    <ClCompile Include="..\..\src\crc16.c" />
+    <ClCompile Include="..\..\src\crc64.c" />
+    <ClCompile Include="..\..\src\crcspeed.c" />
+    <ClCompile Include="..\..\src\db.c" />
+    <ClCompile Include="..\..\src\debug.c" />
+    <ClCompile Include="..\..\src\defrag.c" />
+    <ClCompile Include="..\..\src\dict.c" />
+    <ClCompile Include="..\..\src\endianconv.c" />
+    <ClCompile Include="..\..\src\evict.c" />
+    <ClCompile Include="..\..\src\expire.c" />
+    <ClCompile Include="..\..\src\geo.c" />
+    <ClCompile Include="..\..\src\geohash.c" />
+    <ClCompile Include="..\..\src\geohash_helper.c" />
+    <ClCompile Include="..\..\src\gopher.c" />
+    <ClCompile Include="..\..\src\hyperloglog.c" />
+    <ClCompile Include="..\..\src\intset.c" />
+    <ClCompile Include="..\..\src\latency.c" />
+    <ClCompile Include="..\..\src\lazyfree.c" />
+    <ClCompile Include="..\..\src\listpack.c" />
+    <ClCompile Include="..\..\src\localtime.c" />
+    <ClCompile Include="..\..\src\lolwut.c" />
+    <ClCompile Include="..\..\src\lolwut5.c" />
+    <ClCompile Include="..\..\src\lolwut6.c" />
+    <ClCompile Include="..\..\src\lzf_c.c" />
+    <ClCompile Include="..\..\src\lzf_d.c" />
+    <ClCompile Include="..\..\src\memtest.c" />
+    <ClCompile Include="..\..\src\module.c" />
+    <ClCompile Include="..\..\src\modules\helloacl.c" />
+    <ClCompile Include="..\..\src\modules\helloblock.c" />
+    <ClCompile Include="..\..\src\modules\hellocluster.c" />
+    <ClCompile Include="..\..\src\modules\hellodict.c" />
+    <ClCompile Include="..\..\src\modules\hellohook.c" />
+    <ClCompile Include="..\..\src\modules\hellotimer.c" />
+    <ClCompile Include="..\..\src\modules\hellotype.c" />
+    <ClCompile Include="..\..\src\modules\helloworld.c" />
+    <ClCompile Include="..\..\src\monotonic.c" />
+    <ClCompile Include="..\..\src\mt19937-64.c" />
+    <ClCompile Include="..\..\src\multi.c" />
+    <ClCompile Include="..\..\src\networking.c" />
+    <ClCompile Include="..\..\src\notify.c" />
+    <ClCompile Include="..\..\src\object.c" />
+    <ClCompile Include="..\..\src\pqsort.c" />
+    <ClCompile Include="..\..\src\pubsub.c" />
+    <ClCompile Include="..\..\src\quicklist.c" />
+    <ClCompile Include="..\..\src\rand.c" />
+    <ClCompile Include="..\..\src\rax.c" />
+    <ClCompile Include="..\..\src\rdb.c" />
+    <ClCompile Include="..\..\src\redis-benchmark.c" />
+    <ClCompile Include="..\..\src\redis-check-aof.c" />
+    <ClCompile Include="..\..\src\redis-check-rdb.c" />
+    <ClCompile Include="..\..\src\redis-cli.c" />
+    <ClCompile Include="..\..\src\release.c" />
+    <ClCompile Include="..\..\src\replication.c" />
+    <ClCompile Include="..\..\src\rio.c" />
+    <ClCompile Include="..\..\src\scripting.c" />
+    <ClCompile Include="..\..\src\sds.c" />
+    <ClCompile Include="..\..\src\sentinel.c" />
+    <ClCompile Include="..\..\src\server.c" />
+    <ClCompile Include="..\..\src\setcpuaffinity.c" />
+    <ClCompile Include="..\..\src\setproctitle.c" />
+    <ClCompile Include="..\..\src\sha1.c" />
+    <ClCompile Include="..\..\src\sha256.c" />
+    <ClCompile Include="..\..\src\siphash.c" />
+    <ClCompile Include="..\..\src\slowlog.c" />
+    <ClCompile Include="..\..\src\sort.c" />
+    <ClCompile Include="..\..\src\sparkline.c" />
+    <ClCompile Include="..\..\src\syncio.c" />
+    <ClCompile Include="..\..\src\timeout.c" />
+    <ClCompile Include="..\..\src\tls.c" />
+    <ClCompile Include="..\..\src\tracking.c" />
+    <ClCompile Include="..\..\src\t_hash.c" />
+    <ClCompile Include="..\..\src\t_list.c" />
+    <ClCompile Include="..\..\src\t_set.c" />
+    <ClCompile Include="..\..\src\t_stream.c" />
+    <ClCompile Include="..\..\src\t_string.c" />
+    <ClCompile Include="..\..\src\t_zset.c" />
+    <ClCompile Include="..\..\src\util.c" />
+    <ClCompile Include="..\..\src\ziplist.c" />
+    <ClCompile Include="..\..\src\zipmap.c" />
+    <ClCompile Include="..\..\src\zmalloc.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\deps\hiredis\adapters\ae.h" />
+    <ClInclude Include="..\..\deps\hiredis\adapters\glib.h" />
+    <ClInclude Include="..\..\deps\hiredis\adapters\ivykis.h" />
+    <ClInclude Include="..\..\deps\hiredis\adapters\libev.h" />
+    <ClInclude Include="..\..\deps\hiredis\adapters\libevent.h" />
+    <ClInclude Include="..\..\deps\hiredis\adapters\libuv.h" />
+    <ClInclude Include="..\..\deps\hiredis\adapters\macosx.h" />
+    <ClInclude Include="..\..\deps\hiredis\adapters\qt.h" />
+    <ClInclude Include="..\..\deps\hiredis\alloc.h" />
+    <ClInclude Include="..\..\deps\hiredis\async.h" />
+    <ClInclude Include="..\..\deps\hiredis\async_private.h" />
+    <ClInclude Include="..\..\deps\hiredis\dict.h" />
+    <ClInclude Include="..\..\deps\hiredis\fmacros.h" />
+    <ClInclude Include="..\..\deps\hiredis\hiredis.h" />
+    <ClInclude Include="..\..\deps\hiredis\hiredis_ssl.h" />
+    <ClInclude Include="..\..\deps\hiredis\net.h" />
+    <ClInclude Include="..\..\deps\hiredis\read.h" />
+    <ClInclude Include="..\..\deps\hiredis\sds.h" />
+    <ClInclude Include="..\..\deps\hiredis\sdsalloc.h" />
+    <ClInclude Include="..\..\deps\hiredis\sdscompat.h" />
+    <ClInclude Include="..\..\deps\hiredis\sockcompat.h" />
+    <ClInclude Include="..\..\deps\hiredis\win32.h" />
+    <ClInclude Include="..\..\src\adlist.h" />
+    <ClInclude Include="..\..\src\ae.h" />
+    <ClInclude Include="..\..\src\anet.h" />
+    <ClInclude Include="..\..\src\asciilogo.h" />
+    <ClInclude Include="..\..\src\atomicvar.h" />
+    <ClInclude Include="..\..\src\bio.h" />
+    <ClInclude Include="..\..\src\cli_common.h" />
+    <ClInclude Include="..\..\src\cluster.h" />
+    <ClInclude Include="..\..\src\config.h" />
+    <ClInclude Include="..\..\src\connection.h" />
+    <ClInclude Include="..\..\src\connhelpers.h" />
+    <ClInclude Include="..\..\src\crc16_slottable.h" />
+    <ClInclude Include="..\..\src\crc64.h" />
+    <ClInclude Include="..\..\src\crcspeed.h" />
+    <ClInclude Include="..\..\src\debugmacro.h" />
+    <ClInclude Include="..\..\src\dict.h" />
+    <ClInclude Include="..\..\src\endianconv.h" />
+    <ClInclude Include="..\..\src\fmacros.h" />
+    <ClInclude Include="..\..\src\geo.h" />
+    <ClInclude Include="..\..\src\geohash.h" />
+    <ClInclude Include="..\..\src\geohash_helper.h" />
+    <ClInclude Include="..\..\src\help.h" />
+    <ClInclude Include="..\..\src\intset.h" />
+    <ClInclude Include="..\..\src\latency.h" />
+    <ClInclude Include="..\..\src\listpack.h" />
+    <ClInclude Include="..\..\src\listpack_malloc.h" />
+    <ClInclude Include="..\..\src\lolwut.h" />
+    <ClInclude Include="..\..\src\lzf.h" />
+    <ClInclude Include="..\..\src\lzfP.h" />
+    <ClInclude Include="..\..\src\monotonic.h" />
+    <ClInclude Include="..\..\src\mt19937-64.h" />
+    <ClInclude Include="..\..\src\pqsort.h" />
+    <ClInclude Include="..\..\src\quicklist.h" />
+    <ClInclude Include="..\..\src\rand.h" />
+    <ClInclude Include="..\..\src\rax.h" />
+    <ClInclude Include="..\..\src\rax_malloc.h" />
+    <ClInclude Include="..\..\src\rdb.h" />
+    <ClInclude Include="..\..\src\redisassert.h" />
+    <ClInclude Include="..\..\src\redismodule.h" />
+    <ClInclude Include="..\..\src\rio.h" />
+    <ClInclude Include="..\..\src\sds.h" />
+    <ClInclude Include="..\..\src\sdsalloc.h" />
+    <ClInclude Include="..\..\src\server.h" />
+    <ClInclude Include="..\..\src\sha1.h" />
+    <ClInclude Include="..\..\src\sha256.h" />
+    <ClInclude Include="..\..\src\slowlog.h" />
+    <ClInclude Include="..\..\src\solarisfixes.h" />
+    <ClInclude Include="..\..\src\sparkline.h" />
+    <ClInclude Include="..\..\src\stream.h" />
+    <ClInclude Include="..\..\src\testhelp.h" />
+    <ClInclude Include="..\..\src\util.h" />
+    <ClInclude Include="..\..\src\version.h" />
+    <ClInclude Include="..\..\src\ziplist.h" />
+    <ClInclude Include="..\..\src\zipmap.h" />
+    <ClInclude Include="..\..\src\zmalloc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\deps\hiredis\appveyor.yml" />
+    <None Include="..\..\deps\hiredis\CHANGELOG.md" />
+    <None Include="..\..\deps\hiredis\COPYING" />
+    <None Include="..\..\deps\hiredis\hiredis-config.cmake.in" />
+    <None Include="..\..\deps\hiredis\hiredis.pc.in" />
+    <None Include="..\..\deps\hiredis\hiredis_ssl-config.cmake.in" />
+    <None Include="..\..\deps\hiredis\hiredis_ssl.pc.in" />
+    <None Include="..\..\deps\hiredis\Makefile" />
+    <None Include="..\..\deps\hiredis\README.md" />
+    <None Include="..\..\deps\hiredis\test.sh" />
+    <None Include="..\..\src\Makefile" />
+    <None Include="..\..\src\mkreleasehdr.sh" />
+    <None Include="..\..\src\redis-trib.rb" />
+    <None Include="..\..\src\valgrind.sup" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\deps\hiredis\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{edca7240-1c68-4dd2-8503-5e94569e3d10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\v3">
+      <UniqueIdentifier>{e8f75d3b-e606-4d73-9051-082973605fa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="etcd">
+      <UniqueIdentifier>{c077ede5-ba7b-4c4b-ba21-5fbf498fecde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="etcd\v3">
+      <UniqueIdentifier>{88fcd03b-a950-498d-8171-3c9d0db552a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tst">
+      <UniqueIdentifier>{b691b28e-84ed-4509-ad13-103017662776}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Client.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\KeepAlive.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Response.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SyncClient.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Value.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Watcher.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\Action.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\action_constants.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncCompareAndDeleteAction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncCompareAndSwapAction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncDeleteAction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncDeleteResponse.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncElectionAction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncElectionResponse.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncHeadAction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncHeadResponse.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncLeaseAction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncLeaseResponse.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncLockAction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncLockResponse.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncPutAction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncPutResponse.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncRangeAction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncRangeResponse.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncSetAction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncTxnAction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncTxnResponse.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncUpdateAction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncWatchAction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\AsyncWatchResponse.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\KeyValue.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\Transaction.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\v3\V3Response.cpp">
+      <Filter>src\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tst\AuthTest.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tst\ElectionTest.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tst\EtcdSyncTest.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tst\EtcdTest.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tst\LockTest.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tst\MemLeakTest.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tst\SecurityChannelTest.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tst\WatcherTest.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\etcd\Client.hpp">
+      <Filter>etcd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\KeepAlive.hpp">
+      <Filter>etcd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\Response.hpp">
+      <Filter>etcd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\SyncClient.hpp">
+      <Filter>etcd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\Value.hpp">
+      <Filter>etcd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\Watcher.hpp">
+      <Filter>etcd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\Action.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\action_constants.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncCompareAndDeleteAction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncCompareAndSwapAction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncDeleteAction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncDeleteResponse.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncElectionAction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncElectionResponse.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncHeadAction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncHeadResponse.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncLeaseAction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncLeaseResponse.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncLockAction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncLockResponse.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncPutAction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncPutResponse.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncRangeAction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncRangeResponse.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncSetAction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncTxnAction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncTxnResponse.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncUpdateAction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncWatchAction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\AsyncWatchResponse.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\KeyValue.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\Transaction.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\etcd\v3\V3Response.hpp">
+      <Filter>etcd\v3</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
